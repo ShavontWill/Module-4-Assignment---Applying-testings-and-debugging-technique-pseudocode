@@ -1,0 +1,33 @@
+Question: You have been tasked with reviewing and updating this program. What steps
+would you take to identify any issues in the code?
+Your Response: Run a unit test and also read the comments and the code to see if the steps match up.
+Question: What actions could the developer have taken to minimize the number of
+errors?
+Your Response: Maintain code quality and using static code analysis tools
+
+Debugging Exercise:
+// This pseudocode is intended to determine whether students have
+// passed or failed a course; student needs to average 60 or
+// more on two tests.
+start
+    Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+ output "Enter first score or 0 to quit "
+ input firstTest
+ while firstTest not equal to 0
+      output "Enter second score "
+      input secondTest
+      average = (firstTest + secondTest) / 2
+      output "Average is ", average
+ if average >= PASSING then
+       output "Pass"
+ else
+      output "Fail"
+ endif
+      output "Enter first score or 0 to quit "
+      input firsTest
+ endwhile
+stop
